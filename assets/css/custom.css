@@ -338,8 +338,18 @@
   color: #213d7b;
   opacity: 0.5;
   padding-right: 50px;
+  cursor: pointer;
 }
 
 .faq-body-container {
 	padding-top: 30px;
+}
+
+.faq-question {
+	padding-top: 30px;
+	padding-bottom: 15px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.43;
+  color: #253441;
 }
