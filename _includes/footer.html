@@ -1,0 +1,17 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper footer-description">
+    <span class="footer-heading">{{ site.title | escape }} </span><span class="footer-heading-tagline"><i>{{ site.tagline | escape }}</i></span>
+  </div>
+  <div class="wrapper footer-nav">
+    <div class="footer-nav-links">
+      <span><a class="footer-nav-link" href="{{ '/privacy' | relative_url }}">Privacy</a></span>
+      <span><a class="footer-nav-link" href="{{ '/terms-of-use' | relative_url }}">Terms of Use</a></span>
+    </div>
+    <div class="footer-nav-description">
+      <p>© 2019 Open Government Products - A Division of GovTech. Last Updated {{ site.time | date: "%-d %B %Y" }}</p>
+    </div>
+  </div>
+
+</footer>

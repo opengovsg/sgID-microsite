@@ -9,8 +9,56 @@
   padding: 0px;
 }
 
-.hero-container {
+.row {
 	display: flex;
+	justify-content: space-between;
+}
+
+.button {
+	height: 50px;
+	width: 240px;
+	border-radius: 6px;
+	margin-top: 30px;
+
+  background-color: #0065c7;
+  box-shadow: 0 3px 9px 0 rgba(69, 79, 91, 0.35);
+
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 1.45px;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.icon {
+	height: 55px;
+	padding-bottom: 30px;
+}
+
+.site-header {
+	padding: 15px 80px;
+}
+
+.site-nav {
+	float: left;
+	padding-left: 30px;
+}
+
+.page-link {
+	text-transform: uppercase;
+	padding: 50px 20px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: #454f5b;
+}
+
+.page-content {
+	padding: 0
+}
+
+.hero-container {
 	text-align: center;
 }
 
@@ -23,7 +71,7 @@
 }
 
 .hero-right {
-	background: #eef0f2;
+	background: #d6dade;
 }
 
 .hero-item-subtitle {
@@ -50,13 +98,8 @@
 }
 
 .trusted-by-container {
-	padding: 40px 150px;
+	padding: 40px 150px 0px 150px;
 	text-align: center;
-}
-
-.trusted-by-container .row {
-	display: flex;
-	justify-content: space-between;
 }
 
 .trusted-by-title {
@@ -121,19 +164,182 @@
 	display: inline-block;
 }
 
-.button {
-	height: 50px;
-	width: 240px;
-	border-radius: 6px;
-	margin-top: 30px;
+.benefits-citizens-container {
+	padding: 40px 150px;
+	text-align: center;
+	color: white;
+	background: #23323e;
+}
 
-  background-color: #0065c7;
-  box-shadow: 0 3px 9px 0 rgba(69, 79, 91, 0.35);
+.benefits-citizens-container .row:first-child {
+	display: block;
+}
 
-  color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 1.45px;
-  text-align: center;
-  line-height: 50px;
-  
+.benefits-citizens-subtitle {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 2.14;
+	letter-spacing: 1.4px;
+	padding-bottom: 8px;
+}
+
+.benefits-citizens-title {
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 1.23;
+	padding-bottom: 50px;
+}
+
+.benefits-citizens-item {
+	text-align: left;
+	flex-basis: 100%;
+	padding-right: 60px;
+}
+
+.benefits-citizens-item-title {
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 1.23;
+	padding-bottom: 30px;
+}
+
+.benefits-citizens-item-text {
+	padding-bottom: 50px;
+}
+
+.benefits-citizens-tagline {
+	width: 500px;
+	text-align: left;
+	font-size: 45px;
+	padding: 60px 0px 30px 0px;
+	line-height: 50px;
+}
+
+.benefits-citizens-call-to-action {
+	text-align: left;
+	padding-bottom: 100px;
+}
+
+.benefits-business-container {
+	padding: 40px 150px;
+	text-align: center;
+	background: #f2f2f2;
+}
+
+.benefits-business-container .row:first-child {
+	display: block;
+}
+
+.benefits-business-subtitle {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 2.14;
+	letter-spacing: 1.4px;
+	padding-bottom: 8px;
+}
+
+.benefits-business-title {
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 1.23;
+	padding-bottom: 50px;
+}
+
+.benefits-business-item {
+	text-align: left;
+	flex-basis: 100%;
+	padding-right: 60px;
+}
+
+.benefits-business-item-title {
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 1.23;
+	padding-bottom: 30px;
+}
+
+.benefits-business-item-text {
+	padding-bottom: 50px;
+}
+
+.benefits-business-tagline {
+	width: 500px;
+	text-align: left;
+	font-size: 45px;
+	padding: 60px 0px 30px 0px;
+	line-height: 50px;
+}
+
+.benefits-business-call-to-action {
+	text-align: left;
+	padding-bottom: 100px;
+}
+
+.site-footer {
+	padding: 100px 80px;	
+	color: white;
+  background-color: #27313d;
+}
+
+.footer-heading {
+	font-size: 22px;
+	color: #ffffff;
+}
+
+.footer-heading-tagline {
+	padding-left: 40px;
+	font-size: 18px;
+	color: 
+}
+
+.footer-nav {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid grey;
+	font-size: 14px;
+}
+
+.footer-nav-links {
+	display: inline-block;
+}
+
+.footer-nav-link {
+	padding-right: 30px;
+	color: #ffffff;
+}
+
+.footer-nav-description {
+	display: inline-block;
+	float: right;
+}
+
+
+.post-header {
+	padding: 76px 81px;
+	background-color: #0065c7;
+	color: #ffffff;
+	font-family: 'Rubik', sans-serif;
+}
+
+.post-content {
+	padding: 50px 298px;
+}
+
+.faq-selector-active {
+	font-size: 45px;
+  font-weight: 500;
+  margin-right: 50px;
+  border-bottom: 4px solid black;
+}
+
+.faq-selector-inactive {
+	font-size: 45px;
+  font-weight: 500;
+  color: #213d7b;
+  opacity: 0.5;
+  padding-right: 50px;
+}
+
+.faq-body-container {
+	padding-top: 30px;
 }
