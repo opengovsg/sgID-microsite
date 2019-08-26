@@ -7,23 +7,11 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-<div class="hero-container">
-	<div class="row">
-		<div class="hero-item hero-left">
-			<div class="hero-item-subtitle">BUSINESS</div>
-			<div class="hero-item-title">Integrate with MyInfo in minutes.</div>
-			<div  class="hero-item-text">Make it safe and easy for your users to sign in to your app or website with verified MyInfo details.</div>
-			<div class="button">Get Started</div>
-		</div>
-		<div class="hero-item hero-right">
-			<div class="hero-item-subtitle">CITIZEN</div>
-			<div  class="hero-item-title">Sign in with privacy to apps and websites.</div>
-			<div class="hero-item-text">Stay in control of your personal information. Digic does not store your personal data or track your activities.</div>
-			<div>
-				<img>
-				<img>
-			</div>
-		</div>
+<div class="intro-container">
+	<div class="intro-container-title">Designed for privacy</div><br>
+	<div class="intro-container-subtitle">Take control of your personal information.<br>sgID does not store your personal data or track your activities.</div>
+	
+	<div class="video-player">
 	</div>
 </div>
 
@@ -46,24 +34,51 @@ layout: default
 	</div>
 </div>
 
+<div class="hero-container">
+	<div class="row">
+		<div class="col">	
+			<div class="hero-item hero-business">
+				<div class="hero-item-subtitle">BUSINESS</div>
+				<div class="hero-item-title">Integrate with MyInfo in minutes.</div>
+				<div class="button" id="get-started-btn">Get Started</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="hero-item hero-citizen">
+			<div class="hero-item-subtitle">CITIZEN</div>
+			<div  class="hero-item-title">Sign in with privacy to apps and websites.</div>
+				<img class="icon" src="{{ "/assets/images/download.png" | relative_url }}">
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
 <div class="how-it-works-container">
-	<div class="how-it-works-left">
-		<div class="how-it-works-subtitle">HOW IT WORKS</div>
-		<div class="how-it-works-title">Sign in with sgID</div>
-	  <div class="how-it-works-steps">
-	  	<span class="how-it-works-steps-icon">1</span>
-	  	<span class="how-it-works-steps-text">When creating new accounts in apps or websites, click <b>Sign up with sgID</b></span>
+	<div class="row">
+		<div class="col">
+			<div class="how-it-works-left">
+				<div class="how-it-works-subtitle">HOW IT WORKS</div>
+				<div class="how-it-works-title">Sign in with sgID</div>
+			  <div class="how-it-works-steps">
+			  	<span class="how-it-works-steps-icon">1</span>
+			  	<span class="how-it-works-steps-text">When creating new accounts in apps or websites, click <b>Sign up with sgID</b></span>
+				</div>
+			  <div class="how-it-works-steps">
+			  	<span class="how-it-works-steps-icon">2</span>
+			  	<span class="how-it-works-steps-text">Choose only the details you wish to share with third party app <b>(sgID does not store your data)</b></span>
+				</div>
+			  <div class="how-it-works-steps">
+			  	<span class="how-it-works-steps-icon">3</span>
+			  	<span class="how-it-works-steps-text">You are now signed up with your verified identity safely</span>
+				</div>
+				<div class="button">
+					Watch Video
+				</div>
+			</div>
 		</div>
-	  <div class="how-it-works-steps">
-	  	<span class="how-it-works-steps-icon">2</span>
-	  	<span class="how-it-works-steps-text">Choose only the details you wish to share with third party app <b>(sgID does not store your data)</b></span>
-		</div>
-	  <div class="how-it-works-steps">
-	  	<span class="how-it-works-steps-icon">3</span>
-	  	<span class="how-it-works-steps-text">You are now signed up with your verified identity safely</span>
-		</div>
-		<div class="button">
-			Watch Video
+		<div class="col">
+			<img class="background-image" src="{{ "/assets/images/group.png" | relative_url }}">
 		</div>
 	</div>
 </div>
@@ -74,60 +89,64 @@ layout: default
 		<div class="benefits-citizens-title">Citizens</div>
 	</div>
 	<div class="row">
-		<div class="benefits-citizens-item">
-			<img class="icon" src="{{ "/assets/images/idea.png" | relative_url }}">
-			<div class="benefits-citizens-item-title">No storing your data.</div>
-			<div  class="benefits-citizens-item-text">
-				sgID employs a zero knowledge protocol, and does not store any of your 
-				data that passes through our servers. Even in the case of a data breach,
-				your data will never be compromised. It remains safely in your phone, in
-				your control.
+		<div class="col">		
+			<div class="benefits-citizens-item">
+				<img class="icon" src="{{ "/assets/images/zero-knowledge.png" | relative_url }}">
+				<div class="benefits-citizens-item-title">No storing your data.</div>
+				<div  class="benefits-citizens-item-text">
+					sgID employs a zero knowledge protocol, and does not store any of your data that passes through our servers. Even in the case of a data breach, your data will never be compromised. It remains safely in your phone, in your control.
+				</div>
 			</div>
 		</div>
-		<div class="benefits-citizens-item">
-			<img class="icon" src="{{ "/assets/images/idea.png" | relative_url }}">
-			<div  class="benefits-citizens-item-title">No tracking.</div>
-			<div class="benefits-citizens-item-text">
-				Your NRIC number is used all the time to verify yourself, but providing 
-				it to so many third parties makes it vulnerable. What sgID does is create 
-				a unique identifier for you and every business you authenticate with. 
-				This means that your activities cannot be tracked across businesses.
-			</div>
-			<div>
-				<img>
-				<img>
+		<div class="col">		
+			<div class="benefits-citizens-item">
+				<img class="icon" src="{{ "/assets/images/no-tracking.png" | relative_url }}">
+				<div  class="benefits-citizens-item-title">No tracking.</div>
+				<div class="benefits-citizens-item-text">
+					Your NRIC number is used all the time to verify yourself, but providing it to so many third parties makes it vulnerable. What sgID does is create a unique identifier for you and every business you authenticate with. This means that your activities cannot be tracked across businesses.
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="benefits-citizens-item">
-			<img class="icon" src="{{ "/assets/images/idea.png" | relative_url }}">
-			<div class="benefits-citizens-item-title">Choose what you share.</div>
-			<div  class="benefits-citizens-item-text">
-				Instead of sharing your identity wholesale with your physical NRIC, 
-				sgID enables you to choose only information you wish to share with 
-				businesses. You remain in control of your data, as any unnecessary 
-				information can be deselected.
+		<div class="col">		
+			<div class="benefits-citizens-item">
+				<img class="icon" src="{{ "/assets/images/choose.png" | relative_url }}">
+				<div class="benefits-citizens-item-title">Choose what you share.</div>
+				<div  class="benefits-citizens-item-text">
+					Instead of sharing your identity wholesale with your physical NRIC, sgID enables you to choose only information you wish to share with businesses. You remain in control of your data, as any unnecessary information can be deselected.
+				</div>
 			</div>
 		</div>
-		<div class="benefits-citizens-item">
-			<img class="icon" src="{{ "/assets/images/idea.png" | relative_url }}">
-			<div  class="benefits-citizens-item-title">Keep track of your history.</div>
-			<div class="benefits-citizens-item-text">
-				The average person could share their NRIC at least once a month - visitor 
-				registrations, lucky draw sign ups, identity verification, etc. Stay in 
-				control of your data, and keep track of when and with whom you shared your 
-				information.
-			</div>
-			<div>
-				<img>
-				<img>
+		<div class="col">		
+			<div class="benefits-citizens-item">
+				<img class="icon" src="{{ "/assets/images/history.png" | relative_url }}">
+				<div  class="benefits-citizens-item-title">Keep track of your history.</div>
+				<div class="benefits-citizens-item-text">
+					The average person could share their NRIC at least once a month - visitor 
+					registrations, lucky draw sign ups, identity verification, etc. Stay in 
+					control of your data, and keep track of when and with whom you shared your 
+					information.
+				</div>
+				<div>
+					<img>
+					<img>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="benefits-citizens-tagline">Stay in control of your personal information.</div>
-	<div class="benefits-citizens-call-to-action">
-		<img class="icon" src="{{ "/assets/images/download.png" | relative_url }}">
+</div>
+<div class="benefits-citizens-action-container">
+	<div class="row">
+		<div class="col">
+			<div class="benefits-citizens-tagline">Stay in control of your personal information.</div>
+			<div class="benefits-citizens-call-to-action">
+				<img class="icon" src="{{ "/assets/images/download.png" | relative_url }}">
+			</div>
+		</div>
+<!-- 		<div class="col">
+			<img class="background-image" src="{{ "/assets/images/take-control.png" | relative_url }}">
+		</div> -->
 	</div>
 </div>
 
@@ -137,47 +156,63 @@ layout: default
 		<div class="benefits-business-title">Businesses</div>
 	</div>
 	<div class="row">
-		<div class="benefits-business-item">
-			<img class="icon" src="{{ "/assets/images/idea.png" | relative_url }}">
-			<div class="benefits-business-item-title">Government-verified info.</div>
-			<div  class="benefits-business-item-text">
-				With users’ permissions, personal information is retrieved from MyInfo 
-				and authenticated with SingPass, so businesses can be assured the data 
-				they receive is authentic and up to date.
+		<div class="col">		
+			<div class="benefits-business-item">
+				<img class="icon" src="{{ "/assets/images/govt.png" | relative_url }}">
+				<div class="benefits-business-item-title">Government-verified info.</div>
+				<div  class="benefits-business-item-text">
+					With users’ permissions, personal information is retrieved from MyInfo 
+					and authenticated with SingPass, so businesses can be assured the data 
+					they receive is authentic and up to date.
+				</div>
 			</div>
 		</div>
-		<div class="benefits-business-item">
-			<img class="icon" src="{{ "/assets/images/idea.png" | relative_url }}">
-			<div  class="benefits-business-item-title">Privacy by design.</div>
-			<div class="benefits-business-item-text">
-				sgID was built with privacy in mind, designed to enable users to stay 
-				in control of their personal data. sgID employs end to end encryption, 
-				and does not store any user data, including NRICs. 
+		<div class="col">		
+			<div class="benefits-business-item">
+				<img class="icon" src="{{ "/assets/images/privacy.png" | relative_url }}">
+				<div  class="benefits-business-item-title">Privacy by design.</div>
+				<div class="benefits-business-item-text">
+					sgID was built with privacy in mind, designed to enable users to stay 
+					in control of their personal data. sgID employs end to end encryption, 
+					and does not store any user data, including NRICs. 
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="benefits-business-item">
-			<img class="icon" src="{{ "/assets/images/idea.png" | relative_url }}">
-			<div class="benefits-business-item-title">Onboard in minutes.</div>
-			<div  class="benefits-business-item-text">
-				Create an application in our developer portal in minutes. You can then 
-				use the supplied credentials to start integrating the Digic button into 
-				your app or website so users can sign in to your service right away.
+		<div class="col">		
+			<div class="benefits-business-item">
+				<img class="icon" src="{{ "/assets/images/fast.png" | relative_url }}">
+				<div class="benefits-business-item-title">Onboard in minutes.</div>
+				<div  class="benefits-business-item-text">
+					Create an application in our developer portal in minutes. You can then 
+					use the supplied credentials to start integrating the Digic button into 
+					your app or website so users can sign in to your service right away.
+				</div>
 			</div>
 		</div>
-		<div class="benefits-business-item">
-			<img class="icon" src="{{ "/assets/images/idea.png" | relative_url }}">
-			<div  class="benefits-business-item-title">Be compliant with PDPA.</div>
-			<div class="benefits-business-item-text">
-				The PDPA requires businesses to be compliant with clauses by 1 September 
-				2019, surrounding consent obligation, purpose limitation obligation, and 
-				notification obligation, all of which are built into our solution, sgID.
+		<div class="col">		
+			<div class="benefits-business-item">
+				<img class="icon" src="{{ "/assets/images/compliant.png" | relative_url }}">
+				<div  class="benefits-business-item-title">Be compliant with PDPA.</div>
+				<div class="benefits-business-item-text">
+					The PDPA requires businesses to be compliant with clauses by 1 September 
+					2019, surrounding consent obligation, purpose limitation obligation, and 
+					notification obligation, all of which are built into our solution, sgID.
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="benefits-business-tagline">Onboard in minutes.</div>
-	<div class="benefits-business-call-to-action">
-		<div class="button">Get Started</div>
+</div>
+<div class="benefits-business-action-container">
+	<div class="row">
+		<div class="col"></div>
+		<div class="col">
+			<div class="benefits-business-tagline">Onboard in minutes.</div>
+			<div class="benefits-business-call-to-action">
+				<div class="button">Get Started</div>
+			</div>		
+		</div>
 	</div>
+
 </div>

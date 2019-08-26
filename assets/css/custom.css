@@ -1,3 +1,6 @@
+---
+---
+
 @charset "UTF-8";
 
 body {
@@ -15,16 +18,20 @@ body {
 	justify-content: space-between;
 }
 
+.col {
+	width: 50%;
+}
+
 .button {
 	height: 50px;
 	width: 240px;
 	border-radius: 6px;
 	margin-top: 30px;
 
-  background-color: #0065c7;
+  background-color: #002345;
   box-shadow: 0 3px 9px 0 rgba(69, 79, 91, 0.35);
 
-  color: #ffffff;
+  color: #f4f4f4;
   font-size: 16px;
   letter-spacing: 1.45px;
   text-align: center;
@@ -59,20 +66,52 @@ body {
 	padding: 0
 }
 
+.intro-container {
+	padding: 50px 180px;
+	text-align: center;
+}
+
+.intro-container-title {
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  color: #0065c7;
+}
+
+.intro-container-subtitle {
+  font-size: 21px;
+  line-height: 1.43;  text-align: center;
+  color: #27313d;
+}
+
+.video-player {
+	height: 562px;
+	width: 855px;
+	margin: auto;
+	margin-top: 50px;
+
+	border-radius: 5px;
+	border: 1px solid #dde2eb;
+
+	background: #f4f4f4;
+}
+
 .hero-container {
 	text-align: center;
 }
 
 .hero-item {
-	padding: 80px 150px;
+	padding: 80px 180px;
+	height: 240px;
 }
 
-.hero-left {
-	background: #f2f2f2;
+.hero-business {
+	background: #f7fbfe;
+	text-align: center;
 }
 
-.hero-right {
-	background: #d6dade;
+.hero-citizen {
+	background: #dde2eb;
 }
 
 .hero-item-subtitle {
@@ -98,6 +137,10 @@ body {
 	color: #253441;
 }
 
+#get-started-btn {
+	display: inline-block;
+}
+
 .trusted-by-container {
 	padding: 40px 150px 0px 150px;
 	text-align: center;
@@ -119,8 +162,11 @@ body {
 }
 
 .how-it-works-container {
-	padding: 40px 150px;
 	background: #f2f2f2;
+}
+
+.how-it-works-left {
+	padding: 40px 150px;
 }
 
 .how-it-works-subtitle {
@@ -160,9 +206,12 @@ body {
 }
 
 .how-it-works-steps-text {
-	width: 500px;
+	width: 300px;
 	margin: 10px 10px 10px 0px;
-	display: inline-block;
+	display: inline-block;}
+
+.background-image {
+	max-width: 600px;
 }
 
 .benefits-citizens-container {
@@ -221,6 +270,17 @@ body {
 	padding-bottom: 100px;
 }
 
+.benefits-citizens-action-container {
+	padding: 40px 0px 0px 150px;
+	text-align: center;
+	color: white;
+	background-color: #23323e; /*Default bg, similar to the background's base color*/
+	background-image: url("{{ "/assets/images/take-control.png" | relative_url }}");
+	background-position: right bottom; /*Positioning*/
+	background-repeat: no-repeat; 
+	background-size: contain;
+}
+
 .benefits-business-container {
 	padding: 40px 150px;
 	text-align: center;
@@ -274,6 +334,18 @@ body {
 .benefits-business-call-to-action {
 	text-align: left;
 	padding-bottom: 100px;
+}
+
+.benefits-business-action-container {
+	padding: 40px 0px 0px 150px;
+	margin-top: 50px;
+	text-align: center;
+	color: #0065c7;
+	background-color: #ffffff; /*Default bg, similar to the background's base color*/
+	background-image: url("{{ "/assets/images/launch.png" | relative_url }}");
+	background-position: 50px bottom; /*Positioning*/
+	background-repeat: no-repeat; 
+	background-size: contain;
 }
 
 .site-footer {
