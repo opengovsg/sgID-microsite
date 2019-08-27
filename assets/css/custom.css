@@ -351,7 +351,11 @@ body {
 .site-footer {
 	padding: 100px 80px;	
 	color: white;
-  background-color: #27313d;
+  background-color: #0065c7;
+}
+
+.site-footer a:visited {
+  color: white;
 }
 
 .footer-heading {
