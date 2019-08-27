@@ -3,7 +3,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Sign in with sgID
 tagline: >-
   Designed for Privacy
-baseurl: "/sgID-mircosite" # the subpath of your site, e.g. /blog
+baseurl: "/sgID-microsite" # the subpath of your site, e.g. /blog
 url: "https://opengovsg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
