@@ -44,6 +44,10 @@ body {
 	padding-bottom: 30px;
 }
 
+.logo {
+	height: 40px;
+}
+
 .site-header {
 	padding: 15px 80px;
 }
