@@ -16,10 +16,11 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-content: stretch;
 }
 
 .col {
-	width: 50%;
+	max-width: 50%;
 }
 
 .button {
@@ -88,15 +89,48 @@ body {
   color: #27313d;
 }
 
+.video-player-controls {
+	height: 20px;
+	border-bottom: 1px solid #dde2eb;
+	text-align: left;
+}
+
+.video-player-control-btn-close {
+	width: 7px;
+  height: 7px;
+  border: 1px solid #dde2eb;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #db624f;
+}
+
+.video-player-control-btn-minimize {
+	width: 7px;
+  height: 7px;
+  border: 1px solid #dde2eb;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 5px;
+  background-color: #f2d283;
+}
+
+.video-player-control-btn-expand {
+	width: 7px;
+  height: 7px;
+  border: 1px solid #dde2eb;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 5px;
+  background-color: #3d9e78;
+}
+
 .video-player {
-	height: 562px;
-	width: 855px;
+	width: 853px;
 	margin: auto;
 	margin-top: 50px;
-
 	border-radius: 5px;
 	border: 1px solid #dde2eb;
-
 	background: #f4f4f4;
 }
 
@@ -432,4 +466,71 @@ body {
   font-weight: 500;
   line-height: 1.43;
   color: #253441;
+}
+
+@media screen and (max-width: 600px) {
+	.site-header {
+		padding: 15px 30px;
+	}
+	.col {
+		min-width: 100%;
+		flex-grow: 1;
+	}
+  .video-player {
+    display: none;
+  }
+  .intro-container{
+  	padding: 80px 30px;
+  }
+  .hero-container .row{
+  	flex-direction: column;
+  }
+  .hero-item {
+  	padding: 30px;
+  	height: 250px;
+  }
+  .how-it-works-left{
+  	padding: 30px;
+  }
+
+  .how-it-works-container .background-image {
+  	display: none;
+  }
+
+  .how-it-works-steps-text {
+  	width: 250px;
+  }
+  .benefits-business-container {
+  	padding: 30px;
+  }
+  .benefits-business-container .row{
+  	flex-direction: column;
+  }
+  .benefits-business-item {
+  	padding-right: 0px;
+  }
+  .benefits-business-action-container{
+  	padding: 30px;
+  }
+  .benefits-business-tagline {
+  	width: auto;
+  }
+  .benefits-citizens-container {
+  	padding: 30px;
+  }
+  .benefits-citizens-container .row{
+  	flex-direction: column;
+  }
+  .benefits-citizens-item {
+  	padding-right: 0px;
+  }
+  .benefits-citizens-action-container{
+  	padding: 30px;
+  }
+  .benefits-citizens-tagline {
+  	width: auto;
+  }
+	.site-footer {
+		padding: 30px;
+	}
 }
