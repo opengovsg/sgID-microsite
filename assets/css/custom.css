@@ -51,6 +51,13 @@ b {
 	height: 40px;
 }
 
+.mobile-logo {
+	display: none;
+	height: 30px;
+}
+.site-nav {
+	border: none; 
+}
 .site-header {
 	padding: 15px 80px;
 	border-top: 0px;
@@ -141,8 +148,8 @@ b {
 }
 
 .video-player-mobile {
-	padding-top: 60px;
 	display: none;
+	padding-top: 60px;
 	width: 310px;
 }
 
@@ -506,8 +513,23 @@ iframe {
 }
 
 @media screen and (max-width: 600px) {
+	.logo {
+		display: none;
+	}
+	.mobile-logo {
+		display: inline-block;
+	}
 	.site-header {
 		padding: 15px 30px;
+	}
+	.site-nav {
+		display: flex;
+	}
+	.page-link {
+		display: inline-block;
+		font-size: 12px;
+		margin-left: 8px;
+		line-height: 60px!important;
 	}
 	.col {
 		min-width: 100%;
@@ -602,7 +624,41 @@ iframe {
   	width: auto;
   	text-align: center;
   }
+	.post-header {
+  	padding: 37px 30px;
+	}
+	.post-content {
+  	padding: 10px 30px 37px 30px;
+	}
+	.faq-selector-container {
+		display: flex;
+	}
+	.faq-selector-active {
+		font-size: 30px;
+	}
+	.faq-selector-inactive {
+		font-size: 30px;
+	}
 	.site-footer {
 		padding: 30px;
+		background-position: 30px bottom;
+	}
+	.footer-heading-tagline {
+		display: block;
+		padding-left: 0px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.footer-nav-link{
+		display: block;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.footer-nav-description {
+		padding-top: 5px;
+	}
+	.last-updated-text{
+		padding-top: 13px;
+		display: block;
 	}
 }
