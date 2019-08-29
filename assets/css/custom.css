@@ -5,6 +5,11 @@
 
 body {
 	font-family: 'Rubik', sans-serif;
+	color: #27313d;
+}
+
+b {
+	font-weight: 500;
 }
 
 .wrapper {
@@ -25,13 +30,10 @@ body {
 
 .button {
 	height: 50px;
-	width: 240px;
+	width: 290px;
 	border-radius: 6px;
 	margin-top: 30px;
-
-  background-color: #002345;
-  box-shadow: 0 3px 9px 0 rgba(69, 79, 91, 0.35);
-
+  background-color: #0065c7;
   color: #f4f4f4;
   font-size: 16px;
   letter-spacing: 1.45px;
@@ -51,6 +53,7 @@ body {
 
 .site-header {
 	padding: 15px 80px;
+	border-top: 0px;
 }
 
 .site-nav {
@@ -91,8 +94,11 @@ body {
 
 .video-player-controls {
 	height: 20px;
+	border-radius: 5px 5px 0px 0px;
 	border-bottom: 1px solid #dde2eb;
 	text-align: left;
+	background: #f7fbfe;
+	border: 1px solid #dde2eb;
 }
 
 .video-player-control-btn-close {
@@ -118,7 +124,7 @@ body {
 .video-player-control-btn-expand {
 	width: 7px;
   height: 7px;
-  border: 1px solid #dde2eb;
+  
   border-radius: 5px;
   display: inline-block;
   margin-left: 5px;
@@ -130,8 +136,12 @@ body {
 	margin: auto;
 	margin-top: 50px;
 	border-radius: 5px;
-	border: 1px solid #dde2eb;
-	background: #f4f4f4;
+	border: none;
+	box-shadow: 0 4px 18px 0 rgba(171, 185, 201, 0.5);
+}
+
+iframe { 
+	display: block;
 }
 
 .hero-container {
@@ -140,7 +150,7 @@ body {
 
 .hero-item {
 	padding: 80px 180px;
-	height: 240px;
+	height: 280px;
 }
 
 .hero-business {
@@ -149,7 +159,11 @@ body {
 }
 
 .hero-citizen {
-	background: #dde2eb;
+	background: #f0f7fc;
+}
+
+.download-button-img {
+	height: 50px;
 }
 
 .hero-item-subtitle {
@@ -158,7 +172,7 @@ body {
 	line-height: 2.14;
 	letter-spacing: 1.4px;
 	color: #454f5b;	
-	padding-bottom: 8px;
+	padding-bottom: 20px;
 }
 
 .hero-item-title {
@@ -167,6 +181,13 @@ body {
 	line-height: 1.23;
 	color: #253441;
 	padding-bottom: 13px;
+	height: 140px;
+}
+
+.hero-item-title {
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
 }
 
 .hero-item-text {
@@ -177,10 +198,11 @@ body {
 
 #get-started-btn {
 	display: inline-block;
+	margin-top: 0px!important;
 }
 
 .trusted-by-container {
-	padding: 40px 150px 0px 150px;
+	padding: 80px 150px 0px 150px;
 	text-align: center;
 }
 
@@ -199,12 +221,8 @@ body {
 	padding: 50px;
 }
 
-.how-it-works-container {
-	background: #f2f2f2;
-}
-
 .how-it-works-left {
-	padding: 40px 150px;
+	padding: 80px 100px 40px 150px;
 }
 
 .how-it-works-subtitle {
@@ -213,15 +231,16 @@ body {
 	line-height: 2.14;
 	letter-spacing: 1.4px;
 	color: #454f5b;	
-	padding-bottom: 8px;
+	padding-bottom: 35px;
 }
 
 .how-it-works-title {
 	font-size: 35px;
 	font-weight: 500;
 	line-height: 1.23;
-	color: #253441;
+	color: #0065c7;
 	padding-bottom: 13px;
+	font-family: 'Rubik', sans-serif;
 }
 
 .how-it-works-steps span {
@@ -229,12 +248,12 @@ body {
 }
 
 .how-it-works-steps-icon {
-	border: 1px solid #0065c7;
+	border: 1px solid #3D9E78;
 	border-radius: 20px;
 	display: inline-block;
 	height: 24px;
 	width: 24px;
-	background: #0065c7;
+	background: #3D9E78;
 	text-align: center;
 	vertical-align: middle;
 	color: white;
@@ -246,7 +265,13 @@ body {
 .how-it-works-steps-text {
 	width: 300px;
 	margin: 10px 10px 10px 0px;
-	display: inline-block;}
+	display: inline-block;
+	font-weight: 200;
+}
+
+.how-it-works-background-container {
+	min-width: 50%;
+}
 
 .background-image {
 	max-width: 600px;
@@ -256,7 +281,7 @@ body {
 	padding: 40px 150px;
 	text-align: center;
 	color: white;
-	background: #23323e;
+	background: #002345;
 }
 
 .benefits-citizens-container .row:first-child {
@@ -281,14 +306,14 @@ body {
 .benefits-citizens-item {
 	text-align: left;
 	flex-basis: 100%;
-	padding-right: 60px;
+	padding-right: 300px;
 }
 
 .benefits-citizens-item-title {
 	font-size: 28px;
 	font-weight: 500;
 	line-height: 1.23;
-	padding-bottom: 30px;
+	padding-bottom: 15px;
 }
 
 .benefits-citizens-item-text {
@@ -312,9 +337,9 @@ body {
 	padding: 40px 0px 0px 150px;
 	text-align: center;
 	color: white;
-	background-color: #23323e; /*Default bg, similar to the background's base color*/
+	background-color: #002345; 
 	background-image: url("{{ "/assets/images/take-control.png" | relative_url }}");
-	background-position: right bottom; /*Positioning*/
+	background-position: right bottom; 
 	background-repeat: no-repeat; 
 	background-size: contain;
 }
@@ -322,7 +347,6 @@ body {
 .benefits-business-container {
 	padding: 40px 150px;
 	text-align: center;
-	background: #f2f2f2;
 }
 
 .benefits-business-container .row:first-child {
@@ -347,14 +371,14 @@ body {
 .benefits-business-item {
 	text-align: left;
 	flex-basis: 100%;
-	padding-right: 60px;
+	padding-right: 300px;
 }
 
 .benefits-business-item-title {
 	font-size: 28px;
 	font-weight: 500;
 	line-height: 1.23;
-	padding-bottom: 30px;
+	padding-bottom: 15px;
 }
 
 .benefits-business-item-text {
@@ -367,6 +391,7 @@ body {
 	font-size: 45px;
 	padding: 60px 0px 30px 0px;
 	line-height: 50px;
+	color: #27313d;
 }
 
 .benefits-business-call-to-action {
@@ -375,21 +400,20 @@ body {
 }
 
 .benefits-business-action-container {
-	padding: 40px 0px 0px 150px;
+	padding: 40px 150px 0px 150px;
 	margin-top: 50px;
 	text-align: center;
 	color: #0065c7;
-	background-color: #ffffff; /*Default bg, similar to the background's base color*/
 	background-image: url("{{ "/assets/images/launch.png" | relative_url }}");
-	background-position: 50px bottom; /*Positioning*/
+	background-position: 80px bottom; 
 	background-repeat: no-repeat; 
 	background-size: contain;
 }
 
 .site-footer {
-	padding: 100px 80px;	
+	padding: 50px 80px;	
 	color: white;
-  background-color: #0065c7;
+  background-color: #27313d;
 }
 
 .site-footer a:visited {
@@ -404,7 +428,7 @@ body {
 .footer-heading-tagline {
 	padding-left: 40px;
 	font-size: 18px;
-	color: 
+	font-weight: 200; 
 }
 
 .footer-nav {
