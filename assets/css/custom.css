@@ -25,7 +25,7 @@ b {
 }
 
 .col {
-	max-width: 50%;
+	min-width: 50%;
 }
 
 .button {
@@ -140,6 +140,12 @@ b {
 	box-shadow: 0 4px 18px 0 rgba(171, 185, 201, 0.5);
 }
 
+.video-player-mobile {
+	padding-top: 60px;
+	display: none;
+	width: 310px;
+}
+
 iframe { 
 	display: block;
 }
@@ -149,17 +155,23 @@ iframe {
 }
 
 .hero-item {
-	padding: 80px 180px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 	height: 280px;
+	min-width: 50%
 }
 
 .hero-business {
 	background: #f7fbfe;
 	text-align: center;
+	min-width: 50%;
+	margin-left: 0px;
 }
 
 .hero-citizen {
 	background: #f0f7fc;
+	min-width: 50%;
+	margin-left: 0px;
 }
 
 .download-button-img {
@@ -176,18 +188,19 @@ iframe {
 }
 
 .hero-item-title {
+	display: inline-block;
+	height: 140px;
+	width: 370px;
+	padding-bottom: 13px;
+	color: #253441;
 	font-size: 35px;
 	font-weight: 500;
 	line-height: 1.23;
-	color: #253441;
-	padding-bottom: 13px;
-	height: 140px;
+	text-align: center;
 }
 
 .hero-item-title {
-	display: table-cell; 
 	vertical-align: middle; 
-	text-align: center; 
 }
 
 .hero-item-text {
@@ -306,7 +319,6 @@ iframe {
 .benefits-citizens-item {
 	text-align: left;
 	flex-basis: 100%;
-	padding-right: 300px;
 }
 
 .benefits-citizens-item-title {
@@ -318,6 +330,7 @@ iframe {
 
 .benefits-citizens-item-text {
 	padding-bottom: 50px;
+	width: 370px;
 }
 
 .benefits-citizens-tagline {
@@ -371,7 +384,6 @@ iframe {
 .benefits-business-item {
 	text-align: left;
 	flex-basis: 100%;
-	padding-right: 300px;
 }
 
 .benefits-business-item-title {
@@ -383,6 +395,7 @@ iframe {
 
 .benefits-business-item-text {
 	padding-bottom: 50px;
+	width: 370px;
 }
 
 .benefits-business-tagline {
@@ -413,7 +426,7 @@ iframe {
 .site-footer {
 	padding: 50px 80px;	
 	color: white;
-  background-color: #27313d;
+  background-color: #002345;
 }
 
 .site-footer a:visited {
@@ -503,24 +516,40 @@ iframe {
   .video-player {
     display: none;
   }
+  .video-player-mobile {
+    display: inline-block;
+  }
   .intro-container{
-  	padding: 80px 30px;
+  	padding: 37px 15px;
   }
   .hero-container .row{
   	flex-direction: column;
   }
   .hero-item {
-  	padding: 30px;
-  	height: 250px;
+  	height: 300px;
+  	padding: 37px 15px;
+  }
+  .hero-item-title {
+  	width: 250px;
+  	height: 200px;
   }
   .how-it-works-left{
-  	padding: 30px;
+  	padding: 37px 15px;
   }
-
   .how-it-works-container .background-image {
   	display: none;
   }
 
+	.how-it-works-subtitle {
+		text-align: center;
+	}
+
+	.how-it-works-title {
+		text-align: center;
+	}
+	.how-it-works-steps {
+		padding-left: 15px;
+	}
   .how-it-works-steps-text {
   	width: 250px;
   }
@@ -533,11 +562,21 @@ iframe {
   .benefits-business-item {
   	padding-right: 0px;
   }
+  .benefits-business-item-text {
+  	width: 95%;
+  }
   .benefits-business-action-container{
   	padding: 30px;
+  	padding-bottom: 150px;
+  	margin-top: 0px;
+  }
+  .benefits-business-call-to-action {
+  	display: inline-block;
   }
   .benefits-business-tagline {
+  	padding-top: 0px;
   	width: auto;
+  	text-align: center;
   }
   .benefits-citizens-container {
   	padding: 30px;
@@ -548,11 +587,20 @@ iframe {
   .benefits-citizens-item {
   	padding-right: 0px;
   }
-  .benefits-citizens-action-container{
+  .benefits-citizens-item-text {
+  	width: 95%;
+  }
+  .benefits-citizens-action-container {
   	padding: 30px;
+  	padding-bottom: 120px;
+  }
+  .benefits-business-call-to-action {
+  	display: inline-block;
   }
   .benefits-citizens-tagline {
+  	padding-top: 0px;
   	width: auto;
+  	text-align: center;
   }
 	.site-footer {
 		padding: 30px;
