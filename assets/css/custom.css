@@ -512,6 +512,10 @@ iframe {
   color: #253441;
 }
 
+#faq-body-business {
+	display: none;
+}
+
 @media screen and (max-width: 600px) {
 	.logo {
 		display: none;
