@@ -30,6 +30,28 @@ permalink: /faq/
 		<p>sgID makes it easy for your users to sign in to your apps and websites, and start using your app right away.  Adding a Sign In with sgID button in your app enables you to request for verified information from users. With users’ permission, their verified information is retrieved from MyInfo, so you can be assured the information received is authentic.</p>
 		<div class="faq-question">Does sgID track my users’ activity or data?</div>
 		<p>sgID was built with privacy in mind, designed to enable users to stay in control of their personal data. We employ end to end encryption, and do not store any user data.</p>
+		<div class="faq-question">What data can businesses retrieve from sgID?</div>
+		<ul>
+			<li>Principal Name</li>
+			<li>Date of Birth</li>
+			<li>Country of Birth</li>
+			<li>Residential Status</li>
+			<li>NRIC/FIN</li>
+			<li>Nationality</li>
+			<li>Sex</li>
+			<li>Passport Number</li>
+			<li>Passport Expiry Date</li>
+			<li>Pass Type</li>
+			<li>Pass Status</li>
+			<li>Pass Expiry Date</li>
+			<li>Race</li>
+			<li>Secondary Race</li>
+			<li>Mobile Number</li>
+			<li>Email Address</li>
+			<li>Registered Address</li>
+			<li>Mailing Address</li>
+			<li>Name of Employer</li>
+		</ul>
 		<div class="faq-question">Is sgID compliant with PDPA?</div>
 		<p>Yes. The PDPA requires businesses to be compliant with clauses by 1 September 2019, surrounding consent obligation, purpose limitation obligation, and notification obligation, all of which are built into our solution, sgID. Please visit the PDPC site here for more information on the legislation, guidelines, exemption, and enforcement of the PDPA.</p>
 		<div class="faq-question">Do businesses need to pay to use sgID?</div>
