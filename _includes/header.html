@@ -1,25 +1,16 @@
 <header class="site-header" role="banner">
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+    <img class="logo" src="{{ "/assets/images/logo.png" | relative_url }}">
+    <img class="mobile-logo" src="{{ "/assets/images/mobile-logo.svg" | relative_url }}">
+  </a>
 
-  <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-      <img class="logo" src="{{ "/assets/images/logo.png" | relative_url }}">
-      <img class="mobile-logo" src="{{ "/assets/images/mobile-logo.svg" | relative_url }}">
-    </a>
-
-    {%- if page_paths -%}
-      <nav class="site-nav">
-        <a class="page-link" href="/faq">
-          FAQ
-        </a>
-        <a class="page-link" href="https://go.gov.sg/sgid-support">
-          FEEDBACK
-        </a>
-        <a class="page-link" href="https://app.swaggerhub.com/apis-docs/ogp/sgID/1.0.0">
-          DOCS
-        </a>
-      </nav>
-    {%- endif -%}
-  </div>
+  {%- if page_paths -%}
+  <nav class="site-nav">
+    <a class="page-link" href="/faq">FAQ</a>
+    <a class="page-link" href="https://go.gov.sg/sgid-support">FEEDBACK</a>
+    <a class="page-link" href="https://app.swaggerhub.com/apis-docs/ogp/sgID/1.0.0">DOCS</a>
+  </nav>
+  {%- endif -%}
 </header>

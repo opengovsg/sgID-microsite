@@ -4,10 +4,15 @@ body {
   font-family: "Rubik", sans-serif;
   color: #27313d;
   margin: 0;
+  overflow-x: hidden;
 }
 
 b {
   font-weight: 500;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper {
@@ -71,6 +76,10 @@ b {
   align-items: center;
 }
 
+.site-title {
+  display: flex;
+}
+
 .site-nav {
   float: left;
   padding-left: 30px;
@@ -96,8 +105,12 @@ b {
 }
 
 .intro-container {
-  padding: 50px 180px;
+  padding: 50px;
   text-align: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro-container-title {
@@ -117,10 +130,9 @@ b {
 .video-player-controls {
   height: 20px;
   border-radius: 5px 5px 0px 0px;
-  border-bottom: 1px solid #dde2eb;
   text-align: left;
   background: #f7fbfe;
-  border: 1px solid #dde2eb;
+  margin: 0;
 }
 
 .video-player-control-btn-close {
@@ -146,7 +158,7 @@ b {
 .video-player-control-btn-expand {
   width: 7px;
   height: 7px;
-
+  border: 1px solid #dde2eb;
   border-radius: 5px;
   display: inline-block;
   margin-left: 5px;
@@ -154,22 +166,23 @@ b {
 }
 
 .video-player {
-  width: 853px;
+  width: 80vw;
+  max-width: 1200px;
+  height: calc(80vw / 853 * 480 + 20px);
+  max-height: calc(1200px / 853 * 480 + 20px);
   margin: auto;
   margin-top: 50px;
   border-radius: 5px;
-  border: none;
   box-shadow: 0 4px 18px 0 rgba(171, 185, 201, 0.5);
+  overflow: hidden;
+  border: 1px solid #dde2eb;
 }
 
-.video-player-mobile {
-  display: none;
-  padding-top: 60px;
-  width: 310px;
-}
-
-iframe {
-  display: block;
+.video-player iframe {
+  width: 80vw;
+  max-width: 1200px;
+  height: calc(80vw / 853 * 480);
+  max-height: calc(1200px / 853 * 480);
 }
 
 .hero-container {
@@ -257,7 +270,10 @@ iframe {
 }
 
 .how-it-works-left {
-  padding: 80px 100px 40px 150px;
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .how-it-works-subtitle {
@@ -300,16 +316,22 @@ iframe {
 .how-it-works-steps-text {
   width: 300px;
   margin: 10px 10px 10px 0px;
+  line-height: 1.5;
   display: inline-block;
   font-weight: 200;
 }
 
 .how-it-works-background-container {
   min-width: 50%;
+  background-image: url(/assets/images/group.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  background-position: left center;
 }
 
-.background-image {
-  max-width: 600px;
+.how-it-works-background-container .background-image {
+  max-width: 100%;
 }
 
 .benefits-citizens-container {
@@ -318,19 +340,17 @@ iframe {
   color: white;
   background: #002345;
 }
+.benefits-business-container .row,
 .benefits-citizens-container .row {
   justify-content: space-around;
   max-width: 1600px;
   margin: auto;
 }
 
-.benefits-citizens-container .col {
+.benefits-citizens-container .col,
+.benefits-business-container .col {
   display: flex;
   justify-content: center;
-}
-
-.benefits-citizens-container .row:first-child {
-  display: block;
 }
 
 .benefits-citizens-subtitle {
@@ -348,6 +368,7 @@ iframe {
   padding-bottom: 50px;
 }
 
+.benefits-business-item,
 .benefits-citizens-item {
   text-align: left;
   flex-basis: 100%;
@@ -362,6 +383,7 @@ iframe {
 }
 
 .benefits-citizens-item-text {
+  line-height: 1.5;
   padding-bottom: 50px;
   width: 370px;
 }
@@ -389,9 +411,13 @@ iframe {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 .benefits-citizens-action-container .col {
   padding-right: 500px;
+  width: auto;
+}
+
+.benefits-business-action-container .col {
+  padding-left: calc(50vw - 200px);
   width: auto;
 }
 
@@ -433,6 +459,7 @@ iframe {
 }
 
 .benefits-business-item-text {
+  line-height: 1.5;
   padding-bottom: 50px;
   width: 370px;
 }
@@ -457,13 +484,9 @@ iframe {
   text-align: center;
   color: #0065c7;
   background-image: url(/assets/images/launch.png);
-  background-position: 80px bottom;
+  background-position: calc(50vw - 580px) bottom;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.benefits-business-item {
-  max-width: 370px;
 }
 
 .site-footer {
@@ -492,6 +515,8 @@ iframe {
   padding-top: 15px;
   border-top: 1px solid grey;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-nav-links {
@@ -573,30 +598,31 @@ iframe {
     min-width: 100%;
     flex-grow: 1;
   }
-  .video-player {
-    display: none;
-  }
-  .video-player-mobile {
-    display: inline-block;
-  }
-  .intro-container {
-    padding: 37px 15px;
-  }
+
   .hero-container .row {
     flex-direction: column;
   }
+
   .hero-item {
     height: 300px;
     padding: 37px 15px;
   }
+
   .hero-item-title {
     width: 250px;
     height: 200px;
   }
+}
+
+@media screen and (max-width: 1000px) {
   .how-it-works-left {
-    padding: 37px 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 50px;
   }
-  .how-it-works-container .background-image {
+
+  .how-it-works-background-container {
     display: none;
   }
 
@@ -608,14 +634,12 @@ iframe {
     text-align: center;
   }
   .how-it-works-steps {
-    padding-left: 15px;
+    justify-content: center;
+    display: flex;
   }
   .how-it-works-steps-text {
     width: 250px;
   }
-}
-
-@media screen and (max-width: 1000px) {
   .benefits-business-container {
     padding: 30px;
   }
@@ -641,9 +665,11 @@ iframe {
     width: auto;
     text-align: center;
   }
+
   .benefits-citizens-container {
-    padding: 30px;
+    padding: 40px 50px;
   }
+
   .benefits-citizens-container .row {
     flex-direction: column;
   }
@@ -653,21 +679,31 @@ iframe {
   .benefits-citizens-item-text {
     width: 95%;
   }
+
+  .benefits-business-action-container,
   .benefits-citizens-action-container {
     padding: 30px;
     padding-bottom: 120px;
+    background-size: 80vw;
+    background-position: right bottom;
+    max-width: 100vw;
+    overflow: none;
   }
+
   .benefits-business-call-to-action {
     display: inline-block;
   }
 
+  .benefits-business-action-container .col,
   .benefits-citizens-action-container .col {
     padding-right: 0;
-    padding-bottom: 300px;
+    padding-left: 0;
+    padding-bottom: 28vw;
     align-items: center;
     display: flex;
     flex-direction: column;
   }
+
   .benefits-citizens-tagline {
     padding-top: 0px;
     width: auto;
@@ -677,7 +713,7 @@ iframe {
     padding: 37px 30px;
   }
   .post-content {
-    padding: 10px 30px 37px 30px;
+    padding: 50px 30px 37px 30px;
   }
   .faq-selector-container {
     display: flex;
