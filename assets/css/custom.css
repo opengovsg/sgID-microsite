@@ -250,7 +250,7 @@ a {
 }
 
 .trusted-by-container {
-  padding: 80px 150px 0px 150px;
+  padding: 80px 3vw 0px 3vw;
   text-align: center;
 }
 
@@ -335,7 +335,7 @@ a {
 }
 
 .benefits-citizens-container {
-  padding: 40px 150px;
+  padding: 40px 3vw;
   text-align: center;
   color: white;
   background: #002345;
@@ -402,7 +402,7 @@ a {
 }
 
 .benefits-citizens-action-container {
-  padding: 40px 0px 0px 150px;
+  padding: 40px 0px 0px 3vw;
   text-align: center;
   color: white;
   background-color: #002345;
@@ -422,7 +422,7 @@ a {
 }
 
 .benefits-business-container {
-  padding: 40px 150px;
+  padding: 40px 3vw;
   text-align: center;
 }
 
@@ -479,7 +479,7 @@ a {
 }
 
 .benefits-business-action-container {
-  padding: 40px 150px 0px 150px;
+  padding: 40px 3vw 0px 3vw;
   margin-top: 50px;
   text-align: center;
   color: #0065c7;
@@ -615,6 +615,15 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
+  .how-it-works-container {
+    background-image: url(/assets/images/group.png);
+    background-size: cover;
+  }
+
+  .how-it-works-container .row {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
   .how-it-works-left {
     display: flex;
     justify-content: center;
@@ -654,7 +663,7 @@ a {
   }
   .benefits-business-action-container {
     padding: 30px;
-    padding-bottom: 150px;
+    padding-bottom: 3vw;
     margin-top: 0px;
   }
   .benefits-business-call-to-action {
