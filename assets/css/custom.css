@@ -227,7 +227,7 @@ a {
 
 .download-btn {
   height: 50px;
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
 .hero-item-subtitle {
@@ -417,6 +417,7 @@ a {
 .benefits-citizens-call-to-action {
   text-align: left;
   padding-bottom: 10vw;
+  width: 100%;
 }
 
 .benefits-citizens-action-container {
@@ -625,13 +626,13 @@ a {
     height: auto;
     padding: 37px 15px;
   }
-
-  .hero-item-title {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (max-width: 1000px) {
+  .hero-item-title {
+    font-size: 25px;
+  }
+
   .how-it-works-container {
     background-image: url(/assets/images/group.png);
     background-size: cover;
