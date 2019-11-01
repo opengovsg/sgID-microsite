@@ -31,7 +31,7 @@ a {
 
 .col {
   width: 50%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .button {
@@ -62,7 +62,7 @@ a {
 .mobile-logo {
   display: none;
   height: 30px;
-  margin-right: 40px;
+  margin-right: 10vw;
 }
 
 .site-nav {
@@ -77,7 +77,7 @@ a {
   padding: 15px 80px;
   border-top: 0px;
   border-bottom: 1px solid #e8e8e8;
-  min-height: 55.95px;
+  min-height: 56px;
   position: relative;
   display: flex;
   align-items: center;
@@ -126,7 +126,7 @@ a {
 }
 
 .intro-container-subtitle {
-  padding: 0 50px;
+  padding: 40px 50px 0;
   font-size: 21px;
   line-height: 1.43;
   text-align: center;
@@ -172,9 +172,9 @@ a {
 }
 
 .video-player {
-  width: 80vw;
+  width: 70vw;
   max-width: 1200px;
-  height: calc(80vw / 853 * 480 + 20px);
+  height: calc(70vw / 853 * 480 + 20px);
   max-height: calc(1200px / 853 * 480 + 20px);
   margin: auto;
   margin-top: 50px;
@@ -185,9 +185,9 @@ a {
 }
 
 .video-player iframe {
-  width: 80vw;
+  width: 70vw;
   max-width: 1200px;
-  height: calc(80vw / 853 * 480);
+  height: calc(70vw / 853 * 480);
   max-height: calc(1200px / 853 * 480);
 }
 
@@ -288,10 +288,11 @@ a {
 }
 
 .how-it-works-left {
-  padding: 200px 0;
+  padding: 200px 3vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-width: 350px;
+  margin: auto;
 }
 
 .how-it-works-subtitle {
@@ -306,8 +307,6 @@ a {
 .how-it-works-title {
   font-size: 35px;
   font-weight: 500;
-  line-height: 1.23;
-  color: #0065c7;
   padding-bottom: 13px;
   font-family: "Rubik", sans-serif;
 }
@@ -353,7 +352,7 @@ a {
 }
 
 .benefits-citizens-container {
-  padding: 40px 3vw;
+  padding: 100px 3vw 40px;
   text-align: center;
   color: white;
   background: #002345;
@@ -521,10 +520,10 @@ a {
 .footer-heading {
   font-size: 22px;
   color: #ffffff;
+  display: inline-block;
 }
 
 .footer-heading-tagline {
-  padding-left: 40px;
   font-size: 18px;
   font-weight: 200;
 }
@@ -543,8 +542,8 @@ a {
 }
 
 .footer-nav-link {
-  padding-right: 30px;
   color: #ffffff;
+  display: inline-block;
 }
 
 .footer-nav-description {
@@ -587,48 +586,27 @@ a {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.43;
-  color: #253441;
 }
 
 #faq-body-business {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
-  .logo {
-    display: none;
-  }
-  .mobile-logo {
-    display: inline-block;
-  }
-  .site-header {
-    padding: 15px 30px;
-  }
-  .site-nav {
-    display: flex;
-  }
-  .page-link {
-    display: inline-block;
-    font-size: 12px;
-    margin-left: 8px;
-    line-height: 60px !important;
-  }
-  .col {
-    min-width: 100%;
-    flex-grow: 1;
-  }
-
-  .hero-container .row {
-    flex-direction: column;
-  }
-
-  .hero-item {
-    height: auto;
-    padding: 37px 15px;
-  }
+.last-updated-text {
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 1000px) {
+  .video-player {
+    width: 80vw;
+    height: calc(80vw / 853 * 480 + 20px);
+    margin-top: 30px;
+  }
+
+  .video-player iframe {
+    width: 80vw;
+    height: calc(80vw / 853 * 480);
+  }
   .hero-item-title {
     font-size: 25px;
   }
@@ -695,7 +673,7 @@ a {
   }
 
   .benefits-citizens-container {
-    padding: 40px 50px;
+    padding: 100px 50px 40px;
   }
 
   .benefits-citizens-container .row {
@@ -773,5 +751,63 @@ a {
   .last-updated-text {
     padding-top: 13px;
     display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .video-player {
+    width: 90vw;
+    height: calc(90vw / 853 * 480 + 20px);
+    margin-top: 30px;
+  }
+
+  .video-player iframe {
+    width: 90vw;
+    height: calc(90vw / 853 * 480);
+  }
+
+  .intro-container {
+    padding: 30px 0;
+  }
+
+  .intro-container-title {
+    padding: 0 25px;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    color: #0065c7;
+  }
+
+  .logo {
+    display: none;
+  }
+  .mobile-logo {
+    display: inline-block;
+  }
+  .site-header {
+    padding: 10px 30px;
+    min-height: auto;
+  }
+  .site-nav {
+    display: flex;
+  }
+  .page-link {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 8px;
+    line-height: 40px !important;
+  }
+  .col {
+    min-width: 100%;
+    flex-grow: 1;
+  }
+
+  .hero-container .row {
+    flex-direction: column;
+  }
+
+  .hero-item {
+    height: auto;
+    padding: 37px 15px;
   }
 }

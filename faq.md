@@ -12,7 +12,7 @@ permalink: /faq/
 <div class="faq-body-container">
 	<div id="faq-body-citizen">
 		<div class="faq-question">What does the sgID app do?</div>
-		<p>The sgID app for citizens enables you to verify your identity to businesses without providing your NRIC. When you first download the app, you will go through a one time setup with SingPass. Your personal information from MyInfo will be encrypted and downloaded onto your phone, so sgID never sees or stores any of it.</p>
+		<p>The sgID app for citizens enables you to verify your identity to businesses without providing your NRIC. When you first download the app, you will go through a one time setup with SingPass. Your personal information from MyInfo will be encrypted and downloaded onto your phone, and sgID does not store any of it.</p>
 		<p>So instead of sharing your identity wholesale using your physical NRIC, sgID enables you to choose only information you wish to share with businesses. You can also keep track of where and with whom you shared your personal information.</p>
 		<div class="faq-question">What security measures does sgID provide?</div>
 		<p>sgID employs a zero knowledge protocol, and does not store any of your data that passes through our servers. Even in the case of a data breach, your data will never be compromised because it remains safely in your phone, in your control.</p>
