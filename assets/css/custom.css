@@ -39,7 +39,6 @@ a {
   width: 290px;
   max-width: 80vw;
   border-radius: 6px;
-  margin-top: 30px;
   background-color: #0065c7;
   color: #f4f4f4;
   font-size: 16px;
@@ -288,7 +287,7 @@ a {
 }
 
 .how-it-works-left {
-  padding: 200px 3vw;
+  padding: 200px 30px;
   display: flex;
   flex-direction: column;
   max-width: 350px;
@@ -321,6 +320,7 @@ a {
   display: inline-block;
   height: 24px;
   width: 24px;
+  min-width: 24px;
   background: #3d9e78;
   text-align: center;
   vertical-align: middle;
@@ -483,7 +483,6 @@ a {
 }
 
 .benefits-business-tagline {
-  width: 500px;
   text-align: left;
   font-size: 45px;
   padding: 60px 0px 30px 0px;
@@ -611,21 +610,15 @@ a {
     font-size: 25px;
   }
 
-  .how-it-works-container {
-    background-image: url(/assets/images/group.png);
-    background-size: cover;
-    background-position: center;
-  }
-
   .how-it-works-container .row {
     background: rgba(255, 255, 255, 0.9);
   }
 
   .how-it-works-left {
+    padding: 100px 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 100px 50px;
   }
 
   .how-it-works-background-container {
@@ -673,7 +666,7 @@ a {
   }
 
   .benefits-citizens-container {
-    padding: 100px 50px 40px;
+    padding: 100px 30px 40px;
   }
 
   .benefits-citizens-container .row {
@@ -704,16 +697,17 @@ a {
   .benefits-citizens-action-container .col {
     padding-right: 0;
     padding-left: 0;
-    padding-bottom: 28vw;
+    padding-bottom: 20vw;
     align-items: center;
     display: flex;
     flex-direction: column;
   }
 
   .benefits-citizens-tagline {
-    padding-top: 0px;
+    padding: 0 0 30px;
     width: auto;
     text-align: center;
+    font-size: 35px;
   }
   .post-header {
     padding: 37px 30px;
@@ -756,14 +750,14 @@ a {
 
 @media screen and (max-width: 767px) {
   .video-player {
-    width: 90vw;
-    height: calc(90vw / 853 * 480 + 20px);
+    width: calc(100vw - 60px);
+    height: calc((100vw - 60px) / 853 * 480 + 20px);
     margin-top: 30px;
   }
 
   .video-player iframe {
-    width: 90vw;
-    height: calc(90vw / 853 * 480);
+    width: calc(100vw - 60px);
+    height: calc((100vw - 60px) / 853 * 480);
   }
 
   .intro-container {
@@ -776,6 +770,11 @@ a {
     font-weight: 500;
     text-align: center;
     color: #0065c7;
+  }
+
+  .hero-item-title {
+    height: auto;
+    padding-bottom: 30px;
   }
 
   .logo {
@@ -791,6 +790,15 @@ a {
   .site-nav {
     display: flex;
   }
+
+  .benefits-citizens-action-container {
+    background-size: 100vw;
+  }
+
+  .benefits-business-action-container {
+    background-size: 90vw;
+  }
+
   .page-link {
     display: inline-block;
     font-size: 12px;
@@ -809,5 +817,22 @@ a {
   .hero-item {
     height: auto;
     padding: 37px 15px;
+  }
+
+  .footer-heading {
+    font-size: 18px;
+  }
+
+  .footer-heading-tagline {
+    font-size: 16px;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .last-updated-text {
+    margin-left: 0;
   }
 }
