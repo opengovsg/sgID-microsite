@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .home {
   min-width: 100vw;
   max-width: 100vw;
@@ -55,7 +59,7 @@ a {
 
 .logo {
   height: 40px;
-  margin-right: 40px;
+  margin-right: 70px;
 }
 
 .mobile-logo {
@@ -216,17 +220,20 @@ a {
 
 .download-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 80%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 350px;
   margin: auto;
+}
+
+.benefits-citizens-call-to-action .download-container {
+  margin: 0;
 }
 
 .download-btn {
   height: 50px;
-  margin-bottom: 20px;
 }
 
 .hero-item-subtitle {
@@ -430,7 +437,7 @@ a {
   background-size: contain;
 }
 .benefits-citizens-action-container .col {
-  padding-right: 500px;
+  padding-right: 600px;
   width: auto;
 }
 
@@ -440,7 +447,7 @@ a {
 }
 
 .benefits-business-container {
-  padding: 40px 3vw;
+  padding: 100px 3vw 0px;
   text-align: center;
 }
 
@@ -640,7 +647,7 @@ a {
     width: 250px;
   }
   .benefits-business-container {
-    padding: 30px;
+    padding: 100px 30px 0;
   }
   .benefits-business-container .row {
     flex-direction: column;
@@ -677,6 +684,10 @@ a {
   }
   .benefits-citizens-item-text {
     width: 95%;
+  }
+
+  .benefits-citizens-call-to-action .download-container {
+    margin: auto;
   }
 
   .benefits-business-action-container,
@@ -777,6 +788,10 @@ a {
     padding-bottom: 30px;
   }
 
+  .how-it-works-left {
+    padding: 40px 30px;
+  }
+
   .logo {
     display: none;
   }
@@ -791,8 +806,16 @@ a {
     display: flex;
   }
 
+  .benefits-citizens-container {
+    padding: 40px 30px 40px;
+  }
+
   .benefits-citizens-action-container {
     background-size: 100vw;
+  }
+
+  .benefits-business-container {
+    padding: 40px 30px 0;
   }
 
   .benefits-business-action-container {
@@ -816,7 +839,15 @@ a {
 
   .hero-item {
     height: auto;
-    padding: 37px 15px;
+    padding: 40px 15px;
+  }
+
+  .download-container {
+    max-width: 280px;
+  }
+
+  .download-btn {
+    height: 40px;
   }
 
   .footer-heading {
