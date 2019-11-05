@@ -7,7 +7,7 @@ layout: plain
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/assets/css/beta-download.css">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/beta-download.css" | relative_url }}">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
 </head>
 
