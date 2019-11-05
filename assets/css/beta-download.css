@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  background-color: #0065c7;
+  background-image: url(/assets/images/skyline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .background {
+    background-position: left bottom;
+    background-size: 150vh auto;
+  }
+}
+
+.small-text {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.login {
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 40px 3vw;
+  flex-direction: column;
+  max-width: 80vw;
+}
+
+.logo {
+  margin-bottom: 15px;
+  height: 60px;
+  width: 90px;
+}
+
+.bottom-bar {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 4vh 0 2vh;
+  display: flex;
+  min-width: 356px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-btn {
+  height: auto;
+  width: 200px;
+  margin: 0 auto 10px;
+  cursor: pointer;
+}
