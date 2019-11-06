@@ -19,9 +19,9 @@ layout: plain
             <p class="small-text">Please wait while you're being redirected...</p>
             <div class="bottom-bar">
                 <a href="https://play.google.com/apps/testing/sg.gov.id.digic"><img class="download-btn"
-                        src="/assets/images/googleplay.png"></a>
+                        src="/assets/images/googleplay.svg"></a>
                 <a href="https://testflight.apple.com/join/jNBz3odb"><img class="download-btn"
-                        src="/assets/images/appstore.png"></a>
+                        src="/assets/images/appstore.svg"></a>
             </div>
         </div>
     </div>
