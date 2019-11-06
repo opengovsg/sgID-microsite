@@ -228,6 +228,25 @@ p {
   margin: auto;
 }
 
+.beta-only {
+  width: 100%;
+  border: 2px solid #454f5b;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1.45px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+.beta-only:hover {
+  background: rgba(250, 250, 250, 0.1);
+}
+
 .benefits-citizens-call-to-action .download-container {
   margin: 0;
 }

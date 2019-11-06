@@ -27,9 +27,10 @@ body {
   }
 }
 
-.small-text {
+#small-text {
   padding: 0 40px;
   text-align: center;
+  max-width: 340px;
 }
 
 .login {
