@@ -1,0 +1,208 @@
+---
+layout: page
+title: API Explorer
+permalink: /api
+api: true
+---
+
+<div class="input-field col env-select-container">
+    <select id="server">
+        <option value="https://api.id.gov.sg/v1">Production - https://api.id.gov.sg/v1</option>
+        <option value="https://api-staging.id.gov.sg/v1" selected>Staging - https://api-staging.id.gov.sg/v1
+        </option>
+    </select>
+    <label>Environment</label>
+</div>
+
+<!-- AUTH -->
+<ul class="collapsible">
+    <li id="auth-card" class="card">
+        <div class="collapsible-header">
+            <div class="card-title">Authorization Endpoint</div>
+            <div class="endpoint">
+                <span class="method center">GET</span>
+                <span class="url center">
+                    /oauth/authorize</span>
+            </div>
+        </div>
+
+        <div class="collapsible-body">
+            <h5 class="param-title">Query Parameters</h5>
+            <p class="param">client_id</p>
+            <p class="param-desc">Your Client ID</p>
+            <div class="input-field col">
+                <input type="text" class="form-control" id="clientid" data-binding="clientid" placeholder="abc123">
+            </div>
+
+            <p class="param">redirect_uri</p>
+            <p class="param-desc">Your registered callback url</p>
+            <div class="param-input input-field col">
+                <input type="url" class="form-control" id="redirecturi" data-binding="redirecturi"
+                    placeholder="https://abc.xyz/callback">
+            </div>
+
+            <p class="param">purpose</p>
+            <p class="param-desc">Purpose of your transaction</p>
+            <div class="param-input input-field col">
+                <input class="form-control" id="purpose" placeholder="for testing">
+            </div>
+
+            <p class="param">scope</p>
+            <p class="param-desc">Requested scopes separated by space. openid is a required scope.</p>
+            <div class="param-input input-field col">
+                <input class="form-control" id="scope" placeholder="openid name dob">
+                <button class="btn waves-effect waves-light dropdown-trigger" data-target='scope-checkboxes'>Select
+                    Scopes</button>
+            </div>
+            <form id="scope-checkboxes" class="scopes-dropdown dropdown-content">
+            </form>
+
+            <p class="param">response_type</p>
+            <p class="param-desc">Must be set to <i><b>code</b></i>. Only authorization code flow is supported
+                currently.
+            </p>
+            <div class="param-input input-field col">
+                <input class="form-control" id="responsetype" placeholder="code" value="code" disabled>
+            </div>
+
+            <p class="param">state (Optional)</p>
+            <p class="param-desc">An opaque arbitrary alphanumeric string your app adds to the initial request that
+                sgid
+                includes when redirecting back to your application.</p>
+            <div class="param-input input-field col">
+                <input class="form-control" id="state" placeholder="randomstring">
+            </div>
+
+
+            <div class="code-div">
+                <button class="btn waves-effect waves-light copy-btn" name="action"
+                    data-clipboard-target="#auth-url">COPY
+                    <i class="material-icons right">content_copy</i>
+                </button>
+                <pre><code id="auth-url"></code></pre>
+            </div>
+
+            <div class="row">
+                <button class="btn waves-effect waves-light col s12" name="action" id="auth-test">Test in new tab
+                    <i class="material-icons right">open_in_new</i>
+                </button>
+            </div>
+        </div>
+
+    </li>
+
+    <!-- END AUTH -->
+
+    <!-- TOKEN -->
+
+    <li id="token-card" class="card">
+        <div class="collapsible-header">
+            <div class="card-title">Token Endpoint</div>
+            <div class="endpoint">
+                <span class="method center blue darken-4">POST</span>
+                <span class="url center">
+                    /oauth/token</span>
+            </div>
+        </div>
+        <div class="collapsible-body">
+            <h5 class="param-title">Request Body</h5>
+
+            <p class="param">client_id</p>
+            <p class="param-desc">Your client ID</p>
+            <div class="input-field col">
+                <input type="text" class="form-control" id="clientid2" data-binding="clientid" placeholder="abc123">
+            </div>
+
+            <p class="param">client_secret</p>
+            <p class="param-desc">Your client secret</p>
+            <div class="input-field col">
+                <input type="text" class="form-control" id="clientsecret" placeholder="secret123">
+            </div>
+
+            <p class="param">redirect_uri</p>
+            <p class="param-desc">Your registered callback url</p>
+            <div class="param-input input-field col">
+                <input type="url" class="form-control" id="redirecturi2" data-binding="redirecturi"
+                    placeholder="https://abc.xyz/callback">
+            </div>
+
+            <p class="param">grant_type</p>
+            <p class="param-desc">Must be set to <i><b>authorization_code</b></i>. Only authorization code flow is
+                supported
+                currently.</p>
+            <div class="param-input input-field col">
+                <input class="form-control" id="granttype" placeholder="authorization_code" value="authorization_code"
+                    disabled>
+            </div>
+
+            <p class="param">code <i class="tiny material-icons tooltips" data-position="top"
+                    data-tooltip="Copy auth code returned in redirect url. e.g. https://example.com/callback?code=AUTH_CODE&state=123">help</i>
+            </p>
+            <p class="param-desc">Authorization code returned in the callback url.</p>
+            <div class="param-input input-field col">
+                <input class="form-control" id="code" placeholder="randomstring">
+            </div>
+
+
+            <div class="code-div">
+                <button class="btn waves-effect waves-light copy-btn" name="action"
+                    data-clipboard-target="#token-body">COPY
+                    <i class="material-icons right">content_copy</i>
+                </button>
+                <pre><code id="token-body"></code></pre>
+            </div>
+
+            <div class="row">
+                <button class="btn waves-effect waves-light col s12" name="action" id="token-test">Test
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+
+            <div class="code-div hidden" id="token-response-div">
+                <pre><code id="token-response"></code></pre>
+            </div>
+        </div>
+    </li>
+    <!-- END TOKEN -->
+
+    <!-- START USERINFO -->
+    <li id="token-card" class="card">
+        <div class="collapsible-header">
+            <div class="card-title">UserInfo Endpoint</div>
+            <div class="endpoint">
+                <span class="method center">GET</span>
+                <span class="url center">
+                    /oauth/userinfo</span>
+            </div>
+        </div>
+        <div class="collapsible-body">
+            <h5 class="param-title">Request Header</h5>
+            <p class="param">
+                Authorization
+            </p>
+            <p class="param-desc">Authorization request header to transmit the access token</p>
+            <div class="input-field col with-prefix">
+                <input type="text" class="form-control" id="accesstoken" placeholder="ACCESS_TOKEN"><span
+                    class="prefix">Bearer</span>
+            </div>
+
+            <div class="code-div">
+                <button class="btn waves-effect waves-light copy-btn" name="action"
+                    data-clipboard-target="#userinfo-req"">COPY
+        <i class=" material-icons right">content_copy</i>
+                </button>
+                <pre><code id="userinfo-req"></code></pre>
+            </div>
+
+            <div class="row">
+                <button class="btn waves-effect waves-light col s12" name="action" id="userinfo-test">Test
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+
+            <div class="code-div hidden" id="userinfo-response-div">
+                <pre><code id="userinfo-response"></code></pre>
+            </div>
+        </div>
+    </li>
+</ul>

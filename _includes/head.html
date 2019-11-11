@@ -4,9 +4,15 @@
   {% seo %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap" rel="stylesheet">
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
   <script src="{{ '/assets/js/google-analytics.js' | relative_url }}"></script>
   {%- endif -%}
+  {% if page.api %}
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/playground.css' | relative_url }}">
+  {% endif %}
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>

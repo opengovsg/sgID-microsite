@@ -1,0 +1,149 @@
+/* general style */
+pre code,
+pre code span {
+  font-family: monospace !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-div {
+  position: relative;
+}
+
+.code-div pre {
+  overflow: auto;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* end */
+
+.card {
+  padding: 5vh 3vw;
+}
+
+.env-select-container {
+  margin: 5vh 3vw;
+}
+
+.endpoint {
+  display: inline-flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.endpoint .method {
+  background-color: green;
+  color: white;
+  line-height: 50px;
+  padding: 0 30px;
+}
+
+.endpoint .url {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  line-height: 50px;
+  padding: 0 30px;
+}
+
+.param-title {
+  margin-bottom: 30px;
+}
+
+.param {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.param-desc {
+  color: rgb(100, 100, 100);
+  font-style: italic;
+}
+
+.code-div {
+  background: black;
+  color: white;
+  font-family: monospace;
+  min-height: 80px;
+  padding: 20px;
+}
+
+.input-field .prefix {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: auto;
+  font-size: 16px;
+}
+
+.input-field.with-prefix input {
+  padding-left: 60px;
+  width: calc(100% - 60px);
+}
+
+.scope-btn {
+  position: absolute;
+  right: 0;
+}
+
+/* override */
+.input-field.col label {
+  left: 0;
+}
+
+input[type="url"]:not(.browser-default):disabled {
+  cursor: not-allowed;
+}
+
+.collapsible {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none;
+}
+
+.collapsible-header {
+  display: block;
+  border-bottom: none;
+  padding: 50px;
+}
+
+.collapsible-header:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.collapsible-body {
+  border-bottom: none;
+  padding: 50px;
+  padding-top: 0;
+}
+
+.card-title {
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 0;
+}
+
+.scopes-dropdown {
+  padding: 10px;
+  max-height: 50vh;
+}
+
+.tooltips {
+  cursor: pointer;
+}
