@@ -4,7 +4,7 @@ title: Terms of Use
 permalink: /terms-of-use/
 ---
 
-# Terms of Use
+# Terms of Use - sgID Mobile App
 
 ## 1. General
 1.1.  These Terms of Use govern your access to and use of our services, including the application (whether as software or as a website or otherwise), its contents, push notifications and all other accompanying materials as identified in the Schedule below (collectively, the "**Service**”).
@@ -22,7 +22,7 @@ Please see the Schedule for more information and terms concerning this Service.
 ## 3. Licence Terms and Restrictions
 3.1.  The Service, including the materials made available on or through the Service, is owned by, licensed to, managed or controlled by GovTech. Please see clause 4 (Third Party Materials) for more information.
 
-3.2.  Subject to these Terms of Use, GovTech grants to you a non-exclusive and non-transferable right to access and use the Service for personal or internal purposes only, and only for such use permitted by the functions of the Service. You shall not, amongst other things, reproduce, modify, reverse-engineer, decompile, adapt, publish, redistribute or sublicense the Service or any part of the Service without the prior written consent of GovTech or the respective third party owners. You also shall not use the Service in violation of any applicable laws or agreements that you have with any third parties. All express or implied rights to the Service not specifically granted herein are expressly reserved to GovTech.
+3.2.  Subject to these Terms of Use, GovTech grants to you a non-exclusive, revocable, and non-transferable right to access and use the Service for personal or internal purposes only, and only for such use permitted by the functions of the Service. You shall not, amongst other things, reproduce, modify, reverse-engineer, decompile, adapt, publish, redistribute or sublicense the Service or any part of the Service without the prior written consent of GovTech or the respective third party owners. You also shall not use the Service in violation of any applicable laws or agreements that you have with any third parties. All express or implied rights to the Service not specifically granted herein are expressly reserved to GovTech.
     
 3.3.  GovTech reserves the right to:
         
@@ -36,18 +36,22 @@ Please see the Schedule for more information and terms concerning this Service.
 
 ## 3A. Account Access and Security
 
-3A.1 You are solely responsible for maintaining the confidentiality and security of any authentication credentials associated with your use of the Services.
+3A.1 You are solely responsible for maintaining the confidentiality and security of any authentication credentials associated with your use of the Service, including the security of any of your devices which store the authentication credentials.
 
-3A.2 GovTech shall be entitled, but not obliged, to verify the identity of the person using the Services.
+3A.2 GovTech shall be entitled, but not obliged, to verify the identity of the person using the Service.  Without prejudice to the foregoing, GovTech is not under any duty to verify that any biometric identifier used with the Service, or on your device, belongs to you. 
 
 3A.3 GovTech shall have the sole and absolute discretion to invalidate any authentication credentials at any time, or require you to have to re-authenticate or refresh your authentication credentials at any time, without having to give any reason for the same.
 
-3A.4 GovTech shall be entitled, but not obliged, to act upon or rely on any instructions, information, transmissions of data, or communications received from the account or use of the Services in relation to your authentication credentials, as if such instructions, information, data or communications were issued by you, whether or not the same was authorized by you.
+3A.4 GovTech shall be entitled, but not obliged, to act upon or rely on any instructions, information, transmissions of data, or communications received from the account or use of the Service in relation to your authentication credentials, as if such instructions, information, data or communications were issued by you, whether or not the same was authorized by you.
+
+3A.5 For the avoidance of doubt, you are solely responsible for any loss of whatever nature arising from unauthorized or unofficial modifications made to your device which permit or escalate privileged access, or remove restrictions to such access, which are not intended by the manufacturer or provider of your device or operating system of your device (e.g., “rooting” or “jailbreaking” your mobile phone).
 
 ## 4. Third Party Materials
-4.1.  The Service may require, enable or facilitate access to or use of software or services of a third party (“**Third Party**”). In such an event, there may be terms of use of the third party software or service (the “**Third Party Terms**”). GovTech may be required under or as a result of the Third Party Terms to notify you of certain terms that apply to you (either directly as an end user, or as a party whose acts or omissions could cause GovTech to breach the Third Party Terms) when you use the Services. An example of Third Party Terms may be open source software terms or standard form terms of the distribution platform from which you obtain any part of the Service (e.g. Google Play Store or Apple App Store terms) which bind GovTech as a developer or user of the distribution platform (the “**Distribution Terms**”). Information on the Third Party Terms are embedded in the Service, already accounted for in these Terms of Use, publicly available (e.g the Distribution Terms) or otherwise listed in the Schedule herein. For the avoidance of doubt, insofar as this Clause 4 relates to the Distribution Terms, the relevant Distribution Terms are the terms of the specific platform from which you obtained a copy of the software or application that is part of the Service. For example, if you obtained the said copy from the Google Play Store, then the relevant terms are Google’s Distribution Terms.
 
-4.2.  It is your responsibility to check and read the most up-to-date versions of these Third Party Terms and you are deemed to have notice of the same. In particular, you are deemed to have notice of the Third Party Terms that GovTech (under the Third Party Terms) is required to notify you, and you unconditionally agree to be bound by all the obligations in the Third Party Terms which are applicable to you as the end user.
+4.1.  The Service may require, enable or facilitate access to or use of software or services of a third party (“**Third Party**”). In such an event, there may be terms of use of the third party software or service (the “**Third Party Terms**”). GovTech may be required under or as a result of the Third Party Terms to notify you of certain terms that apply to you (either directly as an end user, or as a party whose acts or omissions could cause GovTech to breach the Third Party Terms) when you use the Services. An example of Third Party Terms may be open source software terms or standard form terms of the distribution platform from which you obtain any part of the Service (e.g. Google Play Store or Apple App Store terms) which bind GovTech as a developer or user of the distribution platform (the “**Distribution Terms**”). Information on the Third Party Terms are embedded in the Service, already accounted for in these Terms of Use, publicly available (e.g the Distribution Terms) or otherwise listed in the Schedule herein. For the avoidance of doubt, insofar as this Clause 4 relates to the Distribution Terms, the relevant Distribution Terms are the terms of the specific platform from which you obtained a copy of the software or application that is part of the Service. For example, if you obtained the said copy from the Google Play Store, then the relevant terms are Google’s Distribution Terms. 
+
+4.2.  It is your responsibility to check and read the most up-to-date versions of these Third Party Terms and you are deemed to have notice of the same. In particular, you are deemed to have notice of the Third Party Terms that GovTech (under the Third Party Terms) is required to notify you, and you unconditionally agree to be bound by all the obligations in the Third Party Terms which are applicable to you as the end user.  For the avoidance of doubt, where Third Party Terms are listed, such Third Party Terms shall be deemed to include any privacy policies and acceptable use policies as are applicable to you.
+
 
 4.3.  If the Third Party Terms require you to enter into an agreement directly with the Third Party, then you unconditionally agree to enter into such agreement, and in any event, to be legally bound by the Third Party Terms. For the avoidance of doubt:
     
@@ -64,6 +68,26 @@ Please see the Schedule for more information and terms concerning this Service.
 ## 5. Your Consent to Access Functions of Your Device
 
 Use of the Service may require you to allow access by the Service to certain functions of your device, such as push notifications, the obtaining and/or sharing of your location, or the collection of data from you in connection with the Service. Please also see clause 8 (Privacy Policy). Your use of the Service shall constitute your consent to the access by the Service of such functions of your device as may be reasonably required by the Service.
+
+## 5A. Ownership of Feedback/Requests/Suggestions
+
+You agree that all title and interest in any feedback, requests or suggestions from you concerning the Services shall be owned by GovTech.
+
+## 5B. Confidentiality
+
+5B.1 If you receive information or data (in whatever form) from GovTech or a Third Party which is designated confidential or proprietary or is otherwise reasonably understood to be confidential or proprietary (collectively, “Confidential Information”), you shall not use, disclose or reproduce the Confidential Information except for the purpose for which it was provided to you. If consent to disclose the Confidential Information to a third party is given by GovTech or the Third Party to you, any act or omission in respect of the Confidential Information by that person shall be deemed to be your act or omission and you agree to be fully liable for the same. In all cases, you shall protect the Confidential Information to the same extent you protect your own confidential information but in no event less than a reasonable standard of care. You shall ensure that any recipients are bound by confidentiality terms at least as restrictive as this Clause.
+
+5B.2 You shall destroy any Confidential Information immediately upon request by GovTech or the Third Party.
+
+5B.3 In the event:
+
+> 5B.3.1 you are, or likely to be, required by an order of court to disclose Confidential Information; or
+
+> 5B.3.2 you have reasonable grounds to suspect the unauthorised use or disclosure or reproduction of Confidential Information;
+
+you shall immediately notify GovTech or the Third Party of the same and cooperate with GovTech or the Third Party to prevent or limit such disclosure.
+
+5B.4 Nothing in this Clause 5B shall prejudice GovTech’s or the Third Party’s other rights at law.
 
 ## 6. Disclaimers and Indemnity
 
@@ -89,9 +113,9 @@ regardless of whether GovTech has been advised of the possibility of such damage
 
 6.3.  Without prejudice and in addition to the foregoing, insofar as the Service facilitates or requires the provision, use or functioning of, or is provided in conjunction with, other products, software, materials and/or services not provided by GovTech, GovTech makes no representation or warranty in relation to such products, software, materials and/or services (including without limitation any representation or warranties as to timeliness, reliability, availability, interoperability, quality, fitness for purpose, non-infringement, suitability or accuracy).
     
-6.4.  You shall not rely on any part of the Service to claim or assert any form of legitimate expectation against GovTech, whether or not arising out of or in connection with GovTech’s roles and functions as a public authority.
-    
-6.5.  You agree to defend and indemnify and keep GovTech and its officers, employees, agents and contractors harmless against all liabilities, losses, damages, costs or expenses (including legal costs on an indemnity basis) howsoever arising out of or in connection with your access or use of the Service (including third party software or services) or your non-compliance with the Terms of Use, Third Party Terms or Incorporated Terms, whether or not you had been advised or informed of the nature or extent of such liabilities, losses, damages, costs or expenses.
+6.4. You shall not rely on any part of the Service to claim or assert any form of legitimate expectation against GovTech, whether or not arising out of or in connection with GovTech’s roles and functions as a public authority. GovTech shall have no responsibility or liability to you or any third party arising out of or in connection with any fraud, phishing, or any other illegal act or omission by other parties in relation to the Service and it is your own responsibility to ensure that the Service you are using or accessing is from a legitimate source.
+
+6.5. You agree to defend and indemnify and keep GovTech and its officers, employees, agents and contractors harmless against all liabilities, losses, damages, costs or expenses (including legal costs on an indemnity basis) howsoever arising out of or in connection with your access or use of the Service (including third party software or services) or your non-compliance with the Terms of Use, Third Party Terms or Incorporated Terms, whether or not you had been advised or informed of the nature or extent of such liabilities, losses, damages, costs or expenses. You warrant and represent that your access or use of the Service does not and will not breach or violate any laws, regulations, trade, economic and/or export sanctions (wherever in the world) applicable to you.
 
 ## 7. Hyperlinks
     
@@ -108,7 +132,7 @@ You also agree to the terms of the Privacy Policy for this Service as may be ame
 
 ## 9. Rights of Third Parties
 
-Subject to the rights of the Third Party set out in Clause 4.5, a person who is not a party to this Terms of Use shall have no right under the Contract (Rights of Third Parties) Act or otherwise to enforce any of its terms.
+Subject to the rights of the Third Party, a person who is not a party to this Terms of Use shall have no right under the Contract (Rights of Third Parties) Act or otherwise to enforce any of its terms.
 
 ## 10. Assignment
     
@@ -134,7 +158,7 @@ Subject to the rights of the Third Party set out in Clause 4.5, a person who is 
 
 Where GovTech is the defendant or respondent, it shall be given at least 30 days before the commencement of any legal action against it to elect to exercise the right herein to have the dispute submitted to arbitration. This right to elect shall not prejudice GovTech’s right to a limitation defence and the period to exercise the right shall not be abridged by reason of any accrual of a limitation defence in favour of GovTech during the said period.
 
-This version of the Terms of Use is dated 20 August 2018.
+This version of the Terms of Use is dated 11 September 2019.
 
 # Schedule
 
