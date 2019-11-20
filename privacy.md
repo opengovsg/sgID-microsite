@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy Statement
-permalink: /privacy/
+permalink: /privacy
 ---
 
 # Privacy Policy
