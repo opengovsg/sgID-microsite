@@ -69,7 +69,7 @@ Please see the Schedule for more information and terms concerning this Service.
 
 Use of the Service may require you to allow access by the Service to certain functions of your device, such as push notifications, the obtaining and/or sharing of your location, or the collection of data from you in connection with the Service. Please also see clause 8 (Privacy Policy). Your use of the Service shall constitute your consent to the access by the Service of such functions of your device as may be reasonably required by the Service.
 
-## 5A. Ownership of Feedback/Requests/Suggestions
+## 5A. Ownership of Feedback / Requests / Suggestions
 
 You agree that all title and interest in any feedback, requests or suggestions from you concerning the Services shall be owned by GovTech.
 
@@ -248,7 +248,7 @@ Please see the Schedule for more information and terms concerning this Service.
 
 Use of the Service may require you to allow access by the Service to certain functions of your device, such as push notifications, the obtaining and/or sharing of your location, or the collection of data from you in connection with the Service. Please also see clause 8 (Privacy Policy). Your use of the Service shall constitute your consent to the access by the Service of such functions of your device as may be reasonably required by the Service.
 
-## 5A. Ownership of Feedback/Requests/Suggestions
+## 5A. Ownership of Feedback / Requests / Suggestions
 
 You agree that all title and interest in any feedback, requests or suggestions from you concerning the Services shall be owned by GovTech.
 
