@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+html,
 body {
   font-family: "Rubik", sans-serif;
   color: #27313d;
@@ -238,6 +239,16 @@ p {
   width: 100%;
   max-width: 350px;
   margin: auto;
+}
+
+.download-container.android,
+.download-container.ios {
+  justify-content: center;
+}
+
+.download-container.android .ios,
+.download-container.ios .android  {
+  display: none;
 }
 
 .beta-only {
@@ -594,7 +605,10 @@ p {
 }
 
 .post-content {
-  padding: 50px 298px;
+  padding: 50px 0;
+  width: calc(100vw - 81px - 81px);
+  max-width: 1000px;
+  margin: auto;
 }
 
 .faq-selector-active {
@@ -755,7 +769,7 @@ p {
     padding: 37px 30px;
   }
   .post-content {
-    padding: 50px 30px 37px 30px;
+    width: calc(100vw - 30px - 30px);
   }
   .faq-selector-container {
     display: flex;

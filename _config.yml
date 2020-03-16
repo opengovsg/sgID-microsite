@@ -5,6 +5,9 @@ tagline: >-
   Designed for privacy
 baseurl: "" # the subpath of your site, e.g. /blog
 
+android_download: "https://play.google.com/store/apps/details?id=sg.gov.id.digic"
+ios_download: "https://apps.apple.com/sg/app/sgid/id1483014251"
+
 # Build settings
 markdown: kramdown
 plugins:
