@@ -933,7 +933,7 @@ p {
   margin-left: 16px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
   .ogp-footer {
     padding: 40px 30px;
     flex-direction: column;
