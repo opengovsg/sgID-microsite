@@ -7,14 +7,29 @@
   <div class="footer-nav">
     <div class="footer-nav-links">
       <span><a class="footer-nav-link" style="width: 100px" href="{{ '/privacy' | relative_url }}">Privacy</a></span>
-      <span><a class="footer-nav-link" style="width: 140px" href="{{ '/terms-of-use' | relative_url }}">Terms of Use</a></span>
+      <span><a class="footer-nav-link" style="width: 140px" href="{{ '/terms-of-use' | relative_url }}">Terms of
+          Use</a></span>
       <span><a class="footer-nav-link" href="{{ '/attribution' | relative_url }}">Open Source Attribution</a></span>
     </div>
     <div class="footer-nav-description">
-      <span>© {{ 'now' | date: "%Y" }} Open Government Products - A Division of GovTech.</span>
       <span class="last-updated-text">Last Updated
         {{ site.time | date: "%-d %B %Y" }}</span>
     </div>
   </div>
 </footer>
+<div class="ogp-footer">
+  <img src="/assets/images/ogplogo.svg" class="ogp-logo" />
+  <div class="ogp-footer-right">
+    <a href="https://sg.linkedin.com/company/open-government-products" target="_blank">
+      <img src="/assets/images/bxl-linkedin.svg" class="social-logo" />
+    </a>
+    <a href="https://www.facebook.com/opengovsg" target="_blank">
+      <img src="/assets/images/bxl-facebook.svg" class="social-logo" />
+    </a>
+    <a href="https://open.gov.sg" target="_blank">
+      <img src="/assets/images/bxl-ogp.svg" class="social-logo" />
+    </a>
+    <p>© {{ 'now' | date: "%Y" }} Open Government Products, Government Technology Agency of Singapore</p>
+  </div>
+</div>
 <script src="/assets/js/download-badge.js"></script>
